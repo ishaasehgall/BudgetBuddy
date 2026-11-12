@@ -22,6 +22,7 @@ def list_transactions(transactions, show=print):
 
 
 def transactions_by_category(transactions, category):
+    """Return transactions matching the specified category."""
     return [t for t in transactions if t["category"] == category]
 
 
