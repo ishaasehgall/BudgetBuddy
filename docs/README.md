@@ -1,40 +1,55 @@
+
 # BudgetBuddy
 
-A small spending/allowance tracker you run in the terminal. Add transactions,
-list them, and see your balance. This is your squad's starting product for
-Elite 101 - you'll grow it one ticket at a time.
+BudgetBuddy is a Python spending and allowance tracker that helps users keep track of their transactions, check their balance, and understand their spending.
 
-## Run it
+## Features
+
+- View your current account balance
+- Add and save transactions
+- View your transaction history
+- Filter transactions by category
+- View your most recent transaction
+- See how many transactions belong to each category
+- View total spending and average transaction amounts
+- View a basic account summary
+
+## How to Run
+
+1. Open the project in VS Code or GitHub Codespaces.
+2. Open the terminal.
+3. Run:
 
 ```bash
 python main.py
 ```
 
-## Run the tests
+4. Enter a number from the menu to use a feature.
+
+## Run Tests
 
 ```bash
 python -m unittest
 ```
 
-## How it's laid out
+## Project Structure
 
-| File | What it does |
-|---|---|
-| `main.py` | The menu loop you interact with |
-| `storage.py` | Loads and saves the JSON data file |
-| `features/core.py` | The transactions, the balance, and small helpers |
-| `features/reports.py` | Summary reports (half-built - finish it via a ticket) |
-| `data/budgetbuddy.json` | The transaction history and starting balance |
-| `tests/test_core.py` | Example tests to copy from |
+- `main.py` - Main menu and user interaction
+- `storage.py` - Loads and saves transaction data
+- `features/core.py` - Transaction and balance functions
+- `features/reports.py` - Account summary and reporting functions
+- `data/budgetbuddy.json` - Stored transaction data
+- `tests/` - Unit tests
 
-## Team
+## Known Limitations
 
-<!-- Add yourself here on your Git lesson: - Your Name (role) -->
+- BudgetBuddy currently runs in the terminal.
+- The category totals report is still under development.
+- Transactions added through the menu use the default category.
+- Some features may not handle empty transaction histories.
 
-- (your squad will add themselves here)
+## Developer
 
-## Where to start
+Isha Sehgal - Solo Developer
 
-Pick a ticket from the `tickets/` folder (or the Issues tab once your section
-repo exists). Read `CONTRIBUTING.md` for the Definition of Done every pull
-request has to meet.
+Built as part of Code2College Elite 101.
